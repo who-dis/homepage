@@ -5,8 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Title = styled.h1`
-  font-size: 6rem;
   font-weight: 300;
+  font-size: 6rem;
+  @media (max-width: 812px) {
+    font-size: 4rem;
+  }
 `;
 
 const Subtitle = styled.h1`
@@ -26,7 +29,6 @@ const Container = styled.div`
 `;
 
 const CTA = styled(Link)`
-  font-weight: 300;
   text-decoration: none;
   color: inherit;
   margin-top: 2rem;
@@ -38,10 +40,12 @@ const CTA = styled(Link)`
     text-decoration: underline;
     cursor: pointer;
   }
+  @media (max-width: 812px) {
+    width: 100%;
+  }
 `;
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  font-size: 1rem;
   margin-left: 0.25rem;
 `;
 
@@ -49,8 +53,8 @@ const Index = () => {
   return (
     <Container>
       <Logo>
-        <Title>WHODIS?</Title>
-        <Subtitle>Who made this website? It's amazing!</Subtitle>
+        <Title>WHODIS</Title>
+        <Subtitle>Who made this website? It is amazing!</Subtitle>
         <CTA to="/pricing">
           Build me a website <StyledFontAwesomeIcon icon={faArrowRight} />
         </CTA>

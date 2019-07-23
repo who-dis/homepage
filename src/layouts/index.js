@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   color: white;
   min-height: 100vh;
-  background-color: pink;
+  background-color: rgba(255, 182, 193);
   font-family: 'Open Sans', sans-serif;
 `;
 
